@@ -80,6 +80,10 @@
 }
 .nav-logo-text{
     display: flex;
+    font-size:.9rem;
+    margin-left: 4rem;
+}
+.nav-logo p{
     margin-left: 4rem;
 }
 .nav-logo{
@@ -89,7 +93,8 @@
     font-size: 1rem;
 }
 .main-page-content{
-    margin-top: 10rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
     color: white;
     display: flex;
     align-items: center;
@@ -115,13 +120,19 @@
 .main-page-text p{
     text-align: center;
 }
+
 .floater{
     display: flex;
+    background-color: rgb(0,107,182);
+    /* clip-path: polygon(0 43%, 100% 56%, 100% 100%, 0% 100%); */
     justify-content: space-between;
-    background-color:rgb(0,107,182);
     margin-right:7rem;
     margin-left: 7rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: 1;
+    border-radius: 10px;
+    margin-top: -6rem;
 }
 .floater-part-two{
     display: flex;
@@ -157,6 +168,7 @@
     font-weight: 100;
     font-size: 1.5rem;
     margin-left: 2.4rem;
+    margin-right: 2.4rem;
     line-height: 32px;
 }
 .why-us{
@@ -266,7 +278,7 @@
     background-color: rgb(0,107,182);
     padding-top: 2.5rem;
     color: white;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     padding-bottom: 5rem;
 }
 .testimonial-head{
@@ -294,9 +306,12 @@
     margin-right: 2rem;
 }
 .user-img{
+    background-image:url(./ASSESTS/user2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 95px;
     width: 95px;
-    background-color: white;
     border-radius: 50%;
     border: 7px solid rgb(227,227,227);
 }
@@ -318,6 +333,125 @@
 .testimonil-data-title{
     font-weight: 100;
     font-size: .9rem;
+}
+.footer{
+    display: flex;
+    margin: 0rem 7rem 5rem 7rem;
+}
+.first-footer{
+    color: rgb(2,71,118);
+}
+.second-footer{
+    color:rgb(0,107,182);
+}
+.footer-logo-text{
+    display: flex;
+    font-size:.9rem;
+}
+.footer-logo p{
+    margin-left: 3.5rem;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.footer-side-one{
+    margin-right: 3rem;
+    width: 28%;
+}
+.footer-text{
+    margin-top: 2rem; 
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 28px;
+}
+.footer-side-two{
+    display: flex;
+    justify-content: center;
+}
+.footer-icon{
+    margin: 2rem 0rem 0rem .5rem;
+}
+.quick-links{
+    margin-left: 7rem;
+}
+.quick-links p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    word-spacing: 0.1cm;
+    margin-bottom: 2.2rem;
+}
+.quick-links ul{
+    list-style-type: none;
+}
+.quick-links ul li{
+    font-weight: 100;
+    margin-bottom: .6rem;
+}
+.end{
+    background-color: rgb(240,240,240);
+}
+.copy-right{
+    padding:2rem 0rem 2rem 0rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.linker{
+    display: none;
+    margin-top: 1rem;
+}
+@media only screen and (max-width:1295px){
+    .floater{
+        padding-top: 5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:1227px){
+    .quick-links{
+        margin-left: 6rem;
+    }
+    .footer-side-one{
+        margin-right: 2rem;
+    }
+}
+@media only screen and (max-width:1137px){
+    .footer-side-two{
+        display: none;
+    }
+    .quick-links{
+        margin: 1rem 2rem 0rem 2rem;
+    }
+    .linker{
+        display: flex;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0rem 0rem 2rem 0rem; 
+    }
+    .footer-side-one{
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin-right: 0rem;
+    }
+    .footer-logo{
+        margin-left: 0rem;
+    }
+    .footer-icon{
+        margin: 0rem;
+        margin-top: 1rem;
+    }
+    .testimonial{
+        margin-bottom: 2rem;
+    }
 }
 @media only screen and (max-width: 1080px){
     .main-header{
@@ -388,6 +522,9 @@
     }
 }
 @media only screen and (max-width: 520px){
+    .quick-links{
+        margin: 1rem 0.2rem 0rem 0.2rem;
+    }
     .main-header-part-1{
         margin-top: 2px;
         display: none;
@@ -460,7 +597,7 @@
         /* justify-content: center; */
     }
     .main-header-part-2{
-        margin-top: 0rem;
+        margin-top: .3rem;
     }
     .tiker-content{
         padding-top: 2.5rem;
@@ -475,6 +612,12 @@
         background-color:rgb(189,189,189);
     }
 }
+@media only screen and (min-width: 1400px){
+    .footer{
+        justify-content: center;
+    }
+}
+
 .active{
     display: flex;
 }
