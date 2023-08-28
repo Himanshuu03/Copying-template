@@ -8,6 +8,12 @@ document.querySelector(".hidden").addEventListener("click",()=>{
 const quickLinks =document.querySelector(".footer-side-two");
 
 document.querySelector(".linker").addEventListener("click",()=>{
-        console.log("Hello");
         quickLinks.classList.toggle("active");
+})
+
+
+const floater =document.querySelector(".floater");
+
+document.querySelector(".join-now").addEventListener("click",()=>{
+        floater.classList.toggle("active");
 })
