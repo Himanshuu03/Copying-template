@@ -93,8 +93,8 @@
     font-size: 1rem;
 }
 .main-page-content{
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin-top: 20vb;
+    /* margin-bottom: 20vb; */
     color: white;
     display: flex;
     align-items: center;
@@ -103,19 +103,18 @@
 .main-page-content h1{
     text-align: center;
     letter-spacing: 1px;
-    font-size: 3rem;
+    font-size: 6vb;
 }
 .m-p-c-h{
     margin-top: 1rem;
     text-align: center;
-    font-size: 1rem;
     font-weight:100;
-    font-size: 3rem;
+    font-size: 5vb;
 }
 .main-page-text{
-    margin-top: 2rem;
+    margin-top: 3vb;
     font-weight:100;
-    font-size: 1.3rem;
+    font-size: 3vb;
 }
 .main-page-text p{
     text-align: center;
@@ -545,13 +544,13 @@
         margin-top: 0rem;
     }
     .main-page-content{
-        margin-top: 5rem;
+        margin-top: 15vb;
     }
     .main-page-content h1{
-        font-size: 2.5rem;
+        font-size: 4vb;
     }
     .m-p-c-h{
-        font-size: 2rem;
+        font-size: 3vb;
     }
     .why-us{
         margin-top: 5rem;
@@ -567,7 +566,7 @@
         margin-right: 0rem;
     }
     .main-page-text{
-        font-size: .9rem;
+        font-size: 2vb;
     }
 }
 @media only screen and (max-width: 650px){
