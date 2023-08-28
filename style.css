@@ -114,6 +114,8 @@
     font-size: 5vb;
 }
 .main-page-text{
+    margin-right: 7rem;
+    margin-left: 7rem;
     margin-top: 3vb;
     font-weight:100;
     font-size: 3vb;
@@ -531,6 +533,13 @@
     }
 }
 @media only screen and (max-width: 520px){
+    .main-page-text{
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-top: 3vb;
+        font-weight:100;
+        font-size: 3vb;
+    }
     .quick-links{
         margin: 1rem 0.2rem 0rem 0.2rem;
     }
