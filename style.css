@@ -590,6 +590,9 @@
     .main-page-text{
         font-size: 2.5vb;
     }
+    .nav-logo p{
+        margin-left: 0rem;
+    }
 }
 @media only screen and (max-width: 650px){
     .why-us{
