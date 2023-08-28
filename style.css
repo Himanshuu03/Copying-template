@@ -93,8 +93,7 @@
     font-size: 1rem;
 }
 .main-page-content{
-    margin-top: 20vb;
-    /* margin-bottom: 20vb; */
+    margin-top: 5rem;
     color: white;
     display: flex;
     align-items: center;
@@ -125,13 +124,10 @@
     background-color: rgb(0,107,182);
     /* clip-path: polygon(0 43%, 100% 56%, 100% 100%, 0% 100%); */
     justify-content: space-between;
-    margin-right:7rem;
-    margin-left: 7rem;
+    margin: -5rem 7rem 0rem 7rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    z-index: 1;
     border-radius: 10px;
-    margin-top: -6rem;
 }
 .floater-part-two{
     display: flex;
@@ -404,9 +400,15 @@
 }
 @media only screen and (max-width:1295px){
     .floater{
-        padding-top: 5rem;
+        padding-top: 1.5rem;
         flex-direction: column;
         align-items: center;
+    }
+    .floater-part-two{
+        display: flex;
+        align-items: center;
+        margin-right: 0rem;
+        margin-top: 1rem;
     }
 }
 @media only screen and (max-width:1227px){
@@ -584,6 +586,53 @@
     .card-why-us-2{
         margin-bottom: 2rem ;
     }
+    .floater{
+        display: flex;
+        background-color: rgb(0,107,182);
+        /* clip-path: polygon(0 43%, 100% 56%, 100% 100%, 0% 100%); */
+        justify-content: space-between;
+        margin: -5rem 2rem 0rem 2rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        border-radius: 10px;
+    }
+    .floater-part-two{
+        display: flex;
+        align-items: center;
+        margin-right: 0rem;
+    }
+    .floater-part-two input{
+        margin-right: .5rem;
+    }
+    .floater-inp{
+        border-radius: 10px;
+        width: 180px;
+        padding: 10px 2px;
+        background-color:rgb(0,107,182);
+        border: 3px solid white;
+    }
+    ::placeholder{
+        color: white;
+        font-size: .7rem;
+        font-weight: 100;
+    }
+    .floater-btn{
+        all: unset;
+        background-color: white;
+        padding: 11px 38px;
+        border-radius: 10px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    .floater-part-one{
+        color: white;
+        font-weight: 100;
+        font-size: 1rem;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+        line-height: 20px;
+    }
 }
 @media only screen and (max-width: 810px){
     .tiker{
@@ -616,7 +665,11 @@
         justify-content: center;
     }
 }
-
+@media only screen and(max-height:460px) {
+    .main-page{
+        background-color: aqua;
+    }
+}
 .active{
     display: flex;
 }
